@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>index</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script type="module" crossorigin src="/easyfundraising/assets/main-8b598c89.js"></script>
+    <link rel="stylesheet" href="/easyfundraising/assets/main-984ee3c0.css">
+  </head>
+  <body>
+     
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container bg-white px-lg-5 py-lg-4 py-4 px-3 nav-bg-shadow">
+  <div class="d-flex align-items-center w-100">
+
+    <a href="index.html" class="d-flex align-items-center me-auto">
+      <img src="/easyfundraising/assets/logo-d1c2a678.jpg" width="60" height="60" alt="">
+      <p class="navbar-brand ms-2">easyfundraising</p> 
+    </a>
+ 
+    <div class="nav-icons px-lg-4 me-lg-4 me-1 fw-bolder order-1 order-lg-2 d-flex dropdown">
+      <!-- 通知drop down -->
+      <i class="bi bi-bell me-lg-4 me-3 position-relative " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"><span class="position-absolute top-0 start-100 translate-middle badge border border-light rounded-circle bg-primary120 p-1"><span class="visually-hidden"></span></i>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="width: 320px;"> 
+        <li class="dropdown-item text-end"><a class="dropdown-item text-end" href="#" style="padding: 0;">
+          <i class="bi bi-check-circle-fill text-primary me-1"></i>
+          <span class="text-primary">全部標記為已讀</span>
+        </a></li>
+        <li><hr class="dropdown-divider"></li>
+
+        <li><a class="dropdown-item d-flex align-items-center" href="#">
+          <div>
+            <i class="bi bi-volume-down fs-2 bg-primary10 rounded-circle px-2 text-primary me-3"></i>
+          </div>
+          <div>
+            <p class="text-wrap">系統通知：6 月 30 日 02:00 網站系統排程更新</p>
+            <p class="fs-7 text-secondary mt-2">4 天前</p>
+          </div>
+        </a></li>
+        <li><hr class="dropdown-divider"></li>
+
+        <li><a class="dropdown-item d-flex align-items-center" href="#">
+          <div>
+            <i class="bi bi-volume-down fs-2 bg-primary10 rounded-circle px-2 text-primary me-3"></i>
+          </div>
+          <div>
+            <p class="text-wrap">系統通知：6 月 30 日 02:00 網站系統排程更新</p>
+            <p class="fs-7 text-secondary mt-2">4 天前</p>
+          </div>
+        </a></li>
+        <li><hr class="dropdown-divider"></li>
+
+        <li><a class="dropdown-item d-flex align-items-center" href="#">
+          <div>
+            <i class="bi bi-volume-down fs-2 bg-primary10 rounded-circle px-2 text-primary me-3"></i>
+          </div>
+          <div>
+            <p class="text-wrap">系統通知：6 月 30 日 02:00 網站系統排程更新</p>
+            <p class="fs-7 text-secondary mt-2">4 天前</p>
+          </div>
+          </a></li>
+        <li><hr class="dropdown-divider"></li>
+
+        <li><a class="dropdown-item d-flex align-items-center" href="#">
+          <div>
+            <i class="bi bi-volume-down fs-2 bg-primary10 rounded-circle px-2 text-primary me-3"></i>
+          </div>
+          <div>
+            <p class="text-wrap">系統通知：6 月 30 日 02:00 網站系統排程更新</p>
+            <p class="fs-7 text-secondary mt-2">4 天前</p>
+          </div>
+        </a></li>
+      </ul>
+
+      <i class="bi bi-bookmark"></i>
+      
+   </div>
+
+   <div class="dropdown">
+     
+  </div>
+
+   <div class="d-flex d-lg-block d-none ms-auto order-lg-3">
+    <button class="btn btn-primary120 py-3 px-4 border-0 rounded text-light">登入/註冊</button>
+  </div> 
+  
+    <button class="navbar-toggler order-2 order-lg-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>   
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">
+      <div class="offcanvas-header"> 
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav pe-1">
+     
+          <li class="nav-item dropdown d-none d-lg-block">
+            <a class="nav-link dropdown-toggle fw-lighter" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+              更多
+            </a>
+            <ul class="dropdown-menu dropend">
+              <li><a class="dropdown-item" href="#">所有募資</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li> 
+              <li><a class="dropdown-item" href="#">人道救援</a></li>
+              <li><a class="dropdown-item" href="#">災後重建</a></li>
+              <li><a class="dropdown-item bg-primary text-light" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">動物救援</a>
+
+              <!-- 2nd layer -->
+                <ul class="dropdown-menu dropend">
+                  <li><a class="dropdown-item" href="#">動物救援</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li> 
+                  <li><a class="dropdown-item" href="#">流浪動物收容</a></li> 
+                  
+                  <li class=""><a class="dropdown-item bg-primary text-light" href="#" data-bs-toggle="dropdown">糧食募集</a> 
+                    <!-- 3nd layer -->
+                    <ul class="dropdown-menu" style="width: 30rem;"> 
+                      
+                      <li><a class="dropdown-item" href="#">熱門糧食募集活動&#128293;</a></li>
+                      <li>
+                      <hr class="dropdown-divider">
+                      </li> 
+                      <!-- 3nd layer 01 -->
+                      <li><a class="dropdown-item" href="#">
+
+                      <div class="position-relative pb-1 me-3 d-flex">
+
+                        <p class="card-tag position-absolute bg-primary120 rounded-pill text-light py-1 px-2 fs-7">長期</p>
+                  
+                        <img src="/easyfundraising/assets/card2-7d10f9e1.jpg" class="object-fit-cover" style="width: 100px; height: 100px; border-radius: 15px;" alt="狗狗" />
+                  
+                        <div class="card-body ms-2">
+                          <h6 class="card-title fw-bold fs-5">浪浪不哭 : 助糧救全台萬隻弱勢貓狗</h6>
+                  
+                          <div class="card-initiator d-flex align-items-center mt-2 mb-2"> 
+                              <img src="/easyfundraising/assets/logo-nobg-176974cf.png" width="30" height="30" alt=""> 
+                              <p class="ms-2">easyfundraising</p> 
+                          </div>
+                    
+                          <div class="align-items-center">
+                            <h5 class="fw-bolder text-primary ">NT$ 24,807</h5>
+                              <span class="fs-7 text-secondary">目前已募資金額</span>
+                            </div>
+                            <hr class="text-secondary">
+                  
+                            <div class="d-flex justify-content-between align-items-center">
+                              <p class="text-secondary fs-7">已有 521 人參與募款</p> 
+                            </div> 
+                        </div> 
+
+                      </div> 
+
+                      </a></li>
+
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li> 
+
+                      <!-- 3nd layer 02 -->
+
+                      <li><a class="dropdown-item" href="#">
+
+                        <div class="position-relative pb-1 me-3 d-flex">
+
+                          <p class="card-tag position-absolute bg-primary120 rounded-pill text-light py-1 px-2 fs-7">長期</p>
+                    
+                          <img  src="/easyfundraising/assets/card2-7d10f9e1.jpg" class="object-fit-cover" style="width: 100px; height: 100px; border-radius: 15px;" alt="狗狗" />
+                    
+                          <div class="card-body ms-2">
+                            <h6 class="card-title fw-bold fs-5">浪浪不哭 : 助糧救全台萬隻弱勢貓狗</h6>
+                    
+                            <div class="card-initiator d-flex align-items-center mt-2 mb-2"> 
+                                <img src="/easyfundraising/assets/logo-nobg-176974cf.png" width="30" height="30" alt=""> 
+                                <p class="ms-2">easyfundraising</p> 
+                            </div>
+                      
+                            <div class="align-items-center">
+                              <h5 class="fw-bolder text-primary ">您已參與募款</h5> 
+                              </div>
+                              <hr class="text-secondary">
+                    
+                              <div class="d-flex justify-content-between align-items-center">
+                                <p class="text-secondary fs-7">已有 521 人參與募款</p> 
+                              </div> 
+                          </div> 
+  
+                        </div>
+                      
+                      </a></li>
+
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li> 
+
+                       <!-- 3nd layer 03 -->
+                       <li><a class="dropdown-item" href="#">
+
+                        <div class="position-relative pb-1 me-3 d-flex">
+  
+                          <p class="card-tag position-absolute bg-primary120 rounded-pill text-light py-1 px-2 fs-7">長期</p>
+                    
+                          <img  src="/easyfundraising/assets/card2-7d10f9e1.jpg" class="object-fit-cover" style="width: 100px; height: 100px; border-radius: 15px;" alt="狗狗" />
+                    
+                          <div class="card-body ms-2">
+                            <h6 class="card-title fw-bold fs-5">浪浪不哭 : 助糧救全台萬隻弱勢貓狗</h6>
+                    
+                            <div class="card-initiator d-flex align-items-center mt-2 mb-2"> 
+                                <img src="/easyfundraising/assets/logo-nobg-176974cf.png" width="30" height="30" alt=""> 
+                                <p class="ms-2">easyfundraising</p> 
+                            </div>
+                      
+                            <div class="align-items-center">
+                              <h5 class="fw-bolder text-primary ">NT$ 24,807</h5>
+                                <span class="fs-7 text-secondary">目前已募資金額</span>
+                              </div>
+                              <hr class="text-secondary">
+                    
+                              <div class="d-flex justify-content-between align-items-center">
+                                <p class="text-secondary fs-7">已有 521 人參與募款</p> 
+                              </div> 
+                          </div> 
+  
+                        </div> 
+  
+                        </a></li>
+            
+                    </ul>
+                    
+                  </li>
+                  <li><a class="dropdown-item" href="#">動物醫療救助</a></li>
+                  <li><a class="dropdown-item" href="#">跨海認養</a></li>
+                  <li><a class="dropdown-item" href="#">收容所志工招募</a></li>
+                  <li><a class="dropdown-item" href="#">物資募集</a></li>
+                  <li><a class="dropdown-item" href="#">動物醫療救助</a></li>
+                  <li><a class="dropdown-item" href="#">弱勢貓狗收容區</a></li>
+                  <li><a class="dropdown-item" href="#">偏鄉絕育</a></li>
+                  <li><a class="dropdown-item" href="#">生命教育講座</a></li>
+                  <li><a class="dropdown-item" href="#">貧困家庭援助</a></li>
+                  <li><a class="dropdown-item" href="#">災後重建</a></li>
+                </ul>
+
+              </li>
+              <li><a class="dropdown-item" href="#">戰區援助</a></li>
+              <li><a class="dropdown-item" href="#">志工招募</a></li>
+              <li><a class="dropdown-item" href="#">環境保護</a></li>
+              <li><a class="dropdown-item" href="#">災區重建</a></li>
+              <li><a class="dropdown-item" href="#">罕見疾病</a></li>
+              <li><a class="dropdown-item" href="#">醫療研究</a></li>
+              <li><a class="dropdown-item" href="#">長者長照</a></li>
+              <li><a class="dropdown-item" href="#">貧困家庭援助</a></li>
+              <li><a class="dropdown-item" href="#">災後重建</a></li> 
+            </ul>
+          </li>
+          
+        </ul>
+            <form class="d-flex ms-lg-4">
+              <input class="form-control me-1 pe-4 p-2" type="search" placeholder="搜尋募款／義賣／志工招募／物資募集" aria-label="Search">
+              <button class="btn btn-primary text-light px-3 text-nowrap" type="submit">搜尋</button>
+            </form>
+
+
+              <!-- mobile -->
+            <div class="d-flex flex-column" style="height: 94%;">
+            <ul class="mt-3 d-lg-none mb-auto">
+              <li><a class="dropdown-item" href="#">所有募資</a></li> 
+              <li><a class="dropdown-item" href="#">人道救援</a></li>
+              <li><a class="dropdown-item" href="#">災後重建</a></li>
+              <li><a class="dropdown-item bg-primary text-light" href="animal-food-aid.html">動物救援</a> 
+              <li><a class="dropdown-item" href="#">戰區援助</a></li>
+              <li><a class="dropdown-item" href="#">志工招募</a></li>
+              <li><a class="dropdown-item" href="#">環境保護</a></li>
+              <li><a class="dropdown-item" href="#">災區重建</a></li>
+              <li><a class="dropdown-item" href="#">罕見疾病</a></li>
+              <li><a class="dropdown-item" href="#">醫療研究</a></li>
+              <li><a class="dropdown-item" href="#">長者長照</a></li>
+              <li><a class="dropdown-item" href="#">貧困家庭援助</a></li>
+              <li><a class="dropdown-item" href="#">災後重建</a></li> 
+            </ul>
+            <hr>
+              <div class="d-lg-none">
+               <button class="btn btn-primary120 py-3 px-4 border-0 rounded text-light w-100 mb-4">登入/註冊</button>
+             </div> 
+  
+           </div>
+
+
+          </div>
+      
+   
+    </div>
+
+  </div>
+  </div>
+</nav>
+
+  
+
+  
+<section>
+  <div class="bg-linear-radius pt-5 pb-7 mt-8">
+
+   <div class="container"> 
+
+    <div class="row justify-content-center gy-3">
+       
+        <!-- breadcrumb   -->
+      <div class="col-11">
+ 
+    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">所有</a></li>
+        <li class="breadcrumb-item active" aria-current="page">人道救援</li>
+        <li class="breadcrumb-item active" aria-current="page">阿富汗</li>
+      </ol>
+    </nav>
+ 
+      </div>
+        <!-- photo   -->
+      <div class="col-lg-6">
+        <div class="img-wrapper "> 
+          <img class="rounded-4" src="https://images.unsplash.com/photo-1613458248541-35ad904cb7f8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        </div>
+      </div>
+
+        <!-- content   -->
+      <div class="col-lg-5">
+        <div class="d-flex flex-column" style="height: 100%;">
+          <ul class="d-flex">
+            <li class="tag me-1">阿富汗</li>
+            <li class="tag me-1">女性權利</li>
+            <li class="tag">中東和北非</li>
+          </ul>
+          <h1 class="mt-3"><b>讓更多阿富汗女孩展開新的明天！</b></h1>
+          <p class="fw-lighter mt-2">唯有持續行動才能帶來改變，堅持為阿富汗女孩發聲、繼續動員國際社會付諸行動，讓她們有機會重拾受教育的權利，需要你的支持！</p>
+          <p class="mt-2 fs-5"><span class="fw-lighter fs-6">已有</span>23,335 人<span class="fw-lighter fs-6">參與</span></p>
+
+          <div class="d-flex mt-lg-auto mt-lg-0 mt-3 ">
+            <div class="btn text-primary border border-primary d-flex me-2 py-lg-2 py-3 px-lg-3 px-4 justify-content-center">
+              <i class="bi bi-bookmark-check-fill me-2"></i>
+              <p class="fw-bold">收藏活動</p>
+            </div>
+            <div class="btn d-flex text-dark py-lg-2 py-3 px-lg-3 px-4 bg-white justify-content-center" type="button"  id="liveAlertBtn">
+              <i class="bi bi-share-fill me-2"></i>
+              <p class="fw-bold">分享活動</p>
+            </div> 
+            
+          </div>
+          <div id="liveAlertPlaceholder" class="mt-3 share-alert" ></div>
+        </div>
+      </div>
+    </div>
+ 
+  </div>
+
+</div> 
+</section>
+
+
+<section class="mt-minus">
+  <div class="container">
+    <div class="border py-5 box-shadow bg-light">
+
+    <div class="row justify-content-center">
+
+      <div class="col-lg-3">
+        <div class="ms-lg-0 ms-4">
+        <div class="d-flex align-items-center"> 
+          <img src="/easyfundraising/assets/logo-d1c2a678.jpg" width="30" height="30" alt="">
+          <p class="ms-1 fs-5">easyfundraising</p>
+        </div>
+        <p class="text-secondary fw-lighter mt-1">線上募資平台</p>
+      </div> 
+    </div>
+
+      <div class="col-lg-2 border-start"> 
+        <div class="mt-lg-0 mt-5 ms-lg-2 ms-4">
+          <p class="fs-5">	&#11088;Top 20</p>
+          <p class="text-secondary fw-lighter mt-1">3,208 留言</p>  
+        </div>
+      </div>
+
+      <div class="col-lg-3 border-start"> 
+        <div class="mt-lg-0 mt-5 ms-lg-2 ms-4 ">
+          <p class="fs-5">已有23,335 人參與</p>
+        <p class="text-secondary fw-lighter mt-1">堅持為阿富汗女孩發聲、繼續動員國際社會付諸行動!</p>
+      </div>
+    </div>
+
+    <div class="col-lg-3 border-start"> 
+      <div class="mt-lg-0 mt-5 ms-lg-2 ms-4">
+        <div class="tag me-1 d-inline fs-6">Top 50 Ranked🔥</div>
+        <p class="text-secondary fw-lighter mt-3">幫助超過2.8萬阿富汗女孩！</p>
+    </div>
+  </div>
+
+</div>
+
+</div>
+</section>
+
+
+<section class="mt-lg-8 mb-5"> 
+  <div class="container">
+    <div class="row justify-content-center gx-lg-8">
+
+     <div class="col-lg-6"> 
+   
+     <div class="donate-title">
+       <img src="/easyfundraising/assets/deco1-5243d601.png" width="150" height="150" alt="">
+       <h2 class="fs-1 fw-bold mb-4">這種對阿富汗女性的窒息式鎮壓正與日俱增。</h2>
+
+       
+      <!-- <p class="fs-5 p-4"><span class="text-deco py-4">常見問題</span></p>； -->
+       <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <b>多久配給一次糧食給浪浪呢?</b>
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              真正把每一筆捐糧，都送到浪浪的肚子裡！政府立案公開透明，絕非飼料商助糧平台，讓您安心做愛心。幫助全台超過2.8萬隻毛小孩！成為最「食」在的後盾，營養補給每月準時配送，助浪浪遠離飢餓困境。勸募許可文號。
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <b>多久配給一次糧食給浪浪呢?</b>
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              真正把每一筆捐糧，都送到浪浪的肚子裡！政府立案公開透明，絕非飼料商助糧平台，讓您安心做愛心。幫助全台超過2.8萬隻毛小孩！成為最「食」在的後盾，營養補給每月準時配送，助浪浪遠離飢餓困境。勸募許可文號。
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              <b>是飼料商嗎?</b>
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              真正把每一筆捐糧，都送到浪浪的肚子裡！政府立案公開透明，絕非飼料商助糧平台，讓您安心做愛心。幫助全台超過2.8萬隻毛小孩！成為最「食」在的後盾，營養補給每月準時配送，助浪浪遠離飢餓困境。勸募許可文號。
+            </div>
+          </div>
+        </div>
+       </div>
+
+       <p class="fs-5 p-4"><span class="text-deco py-4">一個走在我旁邊的士兵打了我的胸部，他說：『我現在可以殺了你，沒人會多說什麼。』</span></p> 
+
+       <p>「在塔利班接管阿富汗的不到一年裡，他們的嚴厲政策正在剝奪數百萬婦女和女孩能有安全、自由和充實生活的權利。」國際特赦組織秘書長阿格妮斯・卡拉馬爾（Agnès Callamard）表示。 </p>
+
+       <p>「這些政策形成了一個壓迫體系，幾乎在生活的各個層面裡都歧視著婦女和女孩，歧視她們每一個日常生活的細節，是否可以上學、是否可以工作、怎麼工作、是否可以離開家以及怎麼離開家，都受到控制和嚴格的限制。」 </p>
+        
+       <p>「這種對阿富汗女性的窒息式鎮壓正與日俱增。國際社會必須迫切要求塔利班尊重和保護婦女和女童的權利。」 </p>
+        
+       <p>國際特赦組織呼籲塔利班實施重大的政策改革和措施，以維護婦女和女孩的權利。包含聯合國安全理事會和所有聯合國成員國在內的各國政府和國際組織，都必須緊急制定和實施強而有力的協調策略，迫使塔利班實現這些改革。 </p>
+        
+       <p>國際特赦組織的研究員於2022年3月造訪阿富汗。全面調查在2021年9月至2022年6月期間進行，調查內容包含訪問90名阿富汗婦女和11名女孩，年齡介於14至74歲之間，她們居住在阿富汗34個省中的20個省。 </p>
+       
+        <div class="mask text-center pt-7">
+          <div class="btn btn-primary text-light px-6 py-2 fs-5">展開瀏覽</div>
+        </div>
+     </div>
+   
+     </div>
+
+     <div class="col-lg-5">
+         <div class="bg-primary10 donate-form p-4 mt-4 mt-lg-0">
+
+         <div class="stepbar position-relative mt-4">
+ 
+          <div class="stepbar-number d-flex justify-content-between px-xl-4"> 
+            <div class="text-center"> 
+              <p class="bg-primary d-inline py-2 px-3 rounded-pill text-light">1</p> 
+              <p class="mt-3">選擇金額</p>
+            </div>
+            <div class="text-center"> 
+              <p class="bg-primary d-inline py-2 px-3 rounded-pill text-light">2</p> 
+              <p class="mt-3">填寫資料</p>
+            </div>
+            <div class="text-center"> 
+              <p class="bg-primary d-inline py-2 px-3 rounded-pill text-light">3</p> 
+              <p class="mt-3">線上付款</p>
+            </div> 
+          </div>
+ 
+            <div class="stepbar-line position-absolute progress bg-white" style="width: 75%; height: .8rem;">
+              <div class="progress-bar" role="progressbar" style="width: 30%;" ></div>
+            </div> 
+           
+
+         </div>
+
+         <div class="toggle-btn bg-light p-2 rounded-pill mx-auto mt-4" style="max-width: 13.5rem;"> 
+           <div class="d-flex justify-content-center"> 
+             <a class="bg-primary text-light py-2 px-3 rounded-pill" href="">定期定額</a>
+             <a class="py-2 px-3 rounded-pill" href="">單筆捐款</a>
+           </div>
+         </div>
+     
+         <ul class="mt-4">
+           <li class="price-option d-flex p-4 align-items-center mt-2">
+             <div class="" >
+               <p class="fs-4" style="width: 3.5rem;">$100</p>
+               <span class="fs-7">/month</span>
+             </div>
+     
+             <div class="ms-5"> 
+               <p class="fs-7">幫助我們為營養不良兒童提供住院治療及即時營養包</p>
+             </div>
+           </li>
+           <li class="selected-item d-flex p-4 align-items-center mt-2">
+             <div class="">
+               <p class="fs-4 text-primary" style="width: 3.5rem;">$500</p>
+               <span class="fs-7">/month</span>
+             </div>
+     
+             <div class="ms-5"> 
+               <p class="fs-7">幫助我們為受武裝衝突影響的傷病患提供緊急醫療照護 </p>
+             </div>
+           </li>
+           <li class="price-option d-flex p-4 align-items-center mt-2">
+             <div class="">
+               <p class="fs-4"  style="width: 3.5rem;">$1200</p>
+               <span class="fs-7">/month</span>
+             </div>
+     
+             <div class="ms-5"> 
+               <p class="fs-7">幫助我們派遣專業醫療團隊在前線提供醫療服務</p>
+             </div>
+           </li>
+           <li class="price-option d-flex p-4 align-items-center mt-2">
+             <div class="">
+               <p class="fs-4" style="width: 3.5rem;">$??</p>
+               <span class="fs-7">/month</span>
+             </div>
+     
+             <div class="ms-5"> 
+               <p class="fs-7">自訂金額</p>
+             </div>
+           </li>
+         </ul>
+     
+        <div class="mt-3 text-end">
+          <a href="form.html" class="btn bg-primary text-light px-4 fs-5">下一步</a>
+        </div>
+  
+       </div>
+     </div>
+
+  </div>
+
+ </div>
+</section>
+
+
+<div class="toast fade show d-md-flex bg-primary fixed-bottom" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header bg-primary text-light fs-6 fw-lighter">
+      <img src="https://i.gifer.com/5gi4.gif" class="rounded me-4" width="40" height="40" alt="...">
+      <p>完成我的定期定額 - 800元，
+      <br>我的選擇決定世界的樣貌 </p>
+    </div>
+    <div class="toast-body d-flex d-md-block justify-content-center"> 
+      <button type="button" class="btn" data-bs-dismiss="toast" aria-label="Close"><a href="aid-afghanistan.html" class="text-light">定期定額</a></button>
+      <hr>
+      <button type="button" class="btn text-light" data-bs-dismiss="toast" aria-label="Close">下次再說</button>
+    </div>
+  </div>   
+    <footer class="footer">
+  <div class="container py-5">
+
+        <div class="footer-top d-lg-flex justify-content-between ms-3 ms-lg-0">
+            <div class="py-5 d-flex align-items-center">
+                <img src="/easyfundraising/assets/logo-nobg-176974cf.png" width="50" height="50" alt=""> 
+                <p class="text-light ms-2 fs-5">easyfundraising</p>
+            </div>
+
+            <ul class="d-lg-flex mt-auto fw-lighter">
+                <li><a href="#" class="text-light me-lg-4 mb-lg-0 mb-3">常見問題</a></li>
+                <li><a href="#" class="text-light me-lg-4 mb-lg-0 mb-3">關於我們</a></li>
+                <li><a href="#" class="text-light me-lg-4 mb-lg-0 mb-3">隱私權政策</a></li>
+                <li><a href="#" class="text-light">使用者條款</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-bottom d-lg-flex justify-content-between ms-3 ms-lg-0"> 
+            <div class="pt-3 pb-5 order-1 order-lg-2">
+                <ul class="d-flex fs-3">
+                    <li><a href="#" class="text-light me-4"><i class="bi bi-line"></i></a></li>
+                    <li><a href="#" class="text-light me-4"><i class="bi bi-youtube"></i></a></li>
+                    <li><a href="#" class="text-light me-4"><i class="bi bi-threads"></i></a></li>
+                    <li><a href="#" class="text-light"><i class="bi bi-instagram"></i></a></li>
+                </ul>
+            </div>
+            <div class="mt-auto order-2 order-lg-1 ">
+                <p class="text-light ms-lg-2 fw-lighter">copyright © 2024&nbsp; easyfundraising &nbsp;募資網站 &nbsp;All Rights Reserved.</p> 
+            </div>
+
+        </div>
+</div>
+</footer>    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+  </body>
+</html>
