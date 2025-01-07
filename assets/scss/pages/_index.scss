@@ -1,3 +1,334 @@
 .index-title {
   font-size: 100px;
 }
+
+.mt-nav{
+  margin-top: 200px;
+}
+
+.banner{
+  .swiper {
+    width: 80%;
+    height: 100%;
+    @include pad {
+      width: 100%;
+    }
+
+    &-button-next, &-button-prev{
+      border-radius: 10px;
+      box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.30);
+    }
+    &-button-prev{
+      background-color: white;
+    }
+    &-button-next:after, &-button-prev:after {
+      content: '';
+    }
+    &-pagination-bullet-active{
+      background-color: $primary;
+    }
+
+  } 
+  .swiper-slide {
+    position: relative;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 70px;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 750px;
+    object-fit: cover;
+    border-radius: 70px;
+  }
+  .swiper-slide h1 {
+    position: absolute;
+    background-color: $primary;
+    color: #fff;
+    left: 0;
+    bottom: 0;
+    border-radius: 0px 70px 0px 70px;
+    padding: 2rem 5rem 2rem 5rem;
+    font-size: 2.1rem;
+    font-weight: 600;
+
+    @include mb-larger {
+      font-size: 1.5rem;
+      border-radius: 0px 70px 70px 70px;
+    }
+  }
+  .swiper-slide p {
+    position: absolute; 
+    background-color: #fff;
+    color: $dark;
+    font-size: 1.3rem; 
+    left: 20px;
+    bottom: 120px;
+    border-radius: 70px;
+    padding: 1.2rem 1.5rem 1.2rem 1rem;
+
+    @include mb-larger {
+      font-size: 1rem; 
+      left: 4px;
+    }
+    @include mb {
+      font-size: .9rem; 
+      left: 0px;
+      bottom: 155px; 
+      border-radius: 30px;
+      line-height: 1.6rem;
+      padding: .8rem 1rem .6rem .6rem;
+    }
+
+    span{
+      @include mb {
+        // display: none;
+
+      }
+    }
+  }
+
+}
+
+.card{
+  border-radius: 20px;  
+  box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.12);
+
+  &-tag{
+    left: .7rem;
+    top: .7rem;
+  } 
+
+  &-img-top{
+    border-radius: 20px 20px 0px 0px;
+  }
+} 
+ 
+.deco-absolute{
+  left: -4rem;
+  top: .7rem;
+} 
+.cards{
+  margin-left: 14rem;
+}
+  
+.progress-bar{
+  background-color: $primary;
+}
+.types li{
+  border-radius: 10px;
+
+  &:hover{
+    background-color: $pink;
+    color: #fff;
+  }
+}
+ 
+.linear-bg{
+  background: linear-gradient(180deg, #F0F6FF 0%, white 100%);
+}
+
+// <!-- 選擇捐款類型 -->
+ 
+.category{ 
+  border-radius: 15px;
+  box-shadow: 0px 12px 32px rgba(29.07, 31.77, 38.25, 0.10);  
+  width: 300px !important ;
+  height: 80px !important ;
+
+  &-row{
+    padding-left: 8rem;
+    padding-right: 8rem;
+    border-radius: 30px;
+  }
+
+  &-icon {
+    background-color: $gray-700;
+    border-radius: 15px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+  }
+}
+ 
+ 
+// <!-- 信用卡捐款 -->
+.stepbar{
+  &-number{ 
+    position: relative;
+    z-index: 100;
+  }
+  &-line {
+    top: .3rem;
+    left: 3rem; 
+  }
+} 
+
+.selected-item{ 
+  border: 3.5px solid $primary;
+  border-radius: 20px;
+}
+.price-option{
+  border-radius: 20px;
+  border: 2px solid $gray-500;
+}
+.donate-form{
+  border-radius: 30px;
+}
+
+.love{ 
+  .swiper {
+    width: 70%;
+    height: 100%; 
+  
+    &-button-next, &-button-prev{
+      border-radius: 10px;
+      box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.30);
+    }
+    &-button-prev{
+      background-color: white;
+    }
+    &-button-next:after, &-button-prev:after {
+      content: '';
+    }
+  } 
+}
+
+ 
+  //animal-food-aid
+
+.bg-linear-radius{
+  background:linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #E7F5FF 100%); 
+  border-bottom-left-radius: 240px; 
+  border-bottom-right-radius: 240px; 
+}
+.box-shadow{
+  box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.12); 
+  border-radius: 30px;
+}
+ 
+.mt-minus{
+  margin-top: -3rem; 
+}
+.text-deco{ 
+  position: relative;
+  &::before{
+    position: absolute;
+    content: "";
+    z-index: -1;
+    background-image: url(/assets/images/Asterisk.png); 
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+    left: -25px;
+    top: .7rem;
+  }
+}
+.mask{
+  position: relative;
+  z-index: 10;
+  margin-top: -8rem;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #F9F9F9 70%); 
+}
+ 
+.form{
+  position: relative;
+  &-control{
+    width: 100%;
+    padding-top: .8rem;
+    padding-bottom: .8rem;
+  } 
+  &-check{
+    .alert{
+      display: none;
+    }
+    input:checked ~ .alert {
+      display: block;
+    }
+    .alert-light{
+      background-color: #F9F9F9;
+    }
+  }
+}
+
+.share-alert{
+  position: absolute;
+  width: 300px; 
+  left: 80rem;
+  top: 35.7rem;
+}
+
+.form-form-btn:hover{
+   color: #fff;
+}
+
+.required{
+  position: relative; 
+ &::after {
+  content: "*";
+  position: absolute; 
+  color: rgb(240, 60, 60);
+  margin-left: .3rem; 
+}
+}
+  
+.bi-1-circle-fill{ 
+  position: relative; 
+  &::after{
+    content: ""; 
+    position: absolute; 
+    width: 75px;
+    height: 2px;
+    background-color: #adadad;
+    left: 33px;
+    top: 18px;
+  }
+}
+
+.bi-2-circle-fill{ 
+  position: relative; 
+  &::after{
+    content: ""; 
+    position: absolute; 
+    width: 75px;
+    height: 2px;
+    background-color: #adadad;
+    left: 33px;
+    top: 18px;
+  }
+}
+
+
+
+.bd-radius{
+  border-radius: 20px;
+}
+
+
+@media screen and (max-width:992px) {
+   
+
+  .sm-nowrap{
+    flex-wrap: nowrap;
+  }
+
+  .cards{
+    margin-left: 0rem;
+  }
+  
+.category-row{
+  padding: 0; 
+} 
+.bg-linear-radius{ 
+  border-radius: 0;  
+}
+
+.mt-nav{
+  margin-top: 150px;
+}
+  }

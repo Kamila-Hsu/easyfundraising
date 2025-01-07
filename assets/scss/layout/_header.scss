@@ -1,4 +1,28 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+.nav-bg-shadow{ 
+  margin-top: 10px;
+  border-radius: 99px;
+  box-shadow: 0px 2px 40px rgba(1, 196, 186, 0.2);
+} 
+
+input::placeholder {  
+  width: 20rem;
+}
+
+.form-control{
+  width: 300px !important;
+}
+ 
+.dropdown{
+  &-menu{
+    padding: .6rem;
+  }
+  &-item{
+    padding: .6rem;
+    border-radius: 12px;
+  }
+ 
+}
+
+.nav-icons i{
+  cursor: pointer;
 }

@@ -1,0 +1,30 @@
+
+
+.toast{  
+
+    button{
+      @include mb{
+        border: #fff 1px solid;
+      }
+    }
+  
+    &-header{
+      border-radius: 20px;
+      border: none;
+      @include mb{
+        margin-top: 10px;
+      }
+     
+    }
+    &-header p{ 
+      @include mb{
+        font-size: 15px;
+      }
+    }
+  
+    &-body {
+      @include mb{
+        gap: 1em;
+      }
+    }
+  }

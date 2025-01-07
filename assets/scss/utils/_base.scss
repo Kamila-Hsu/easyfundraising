@@ -1,0 +1,49 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@700&family=Noto+Serif+TC:wght@700&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css");
+body{
+    font-family: 'Noto Sans TC', sans-serif !important; 
+    font-weight: 700; 
+    background-color: #F9F9F9;
+    }
+a{
+    text-decoration: none;
+    display: block; 
+    color: #1f1f1f; 
+}
+
+
+img{
+    max-width: 100%;
+    height: auto;
+    // vertical-align: bottom;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin-bottom: 0;
+}
+
+p{
+    margin-bottom: 0;
+}
+
+li{
+    list-style: none;    
+}
+ul {
+    margin: 0;
+    padding: 0; 
+}
+
+// $utilities: map-merge(
+//     $utilities,
+//         (
+//             "font-size":
+//             map-merge(
+//             map-get($utilities, "font-size"),
+//         (
+//          responsive: true,
+//         )
+//         ),
+//     )
+// );

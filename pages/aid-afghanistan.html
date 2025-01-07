@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>index</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>  
+<section>
+  <div class="bg-linear-radius pt-5 pb-7 mt-8">
+
+   <div class="container"> 
+
+    <div class="row justify-content-center gy-3">
+       
+        <!-- breadcrumb   -->
+      <div class="col-11">
+ 
+    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">所有</a></li>
+        <li class="breadcrumb-item active" aria-current="page">人道救援</li>
+        <li class="breadcrumb-item active" aria-current="page">阿富汗</li>
+      </ol>
+    </nav>
+ 
+      </div>
+        <!-- photo   -->
+      <div class="col-lg-6">
+        <div class="img-wrapper "> 
+          <img class="rounded-4" src="https://images.unsplash.com/photo-1613458248541-35ad904cb7f8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        </div>
+      </div>
+
+        <!-- content   -->
+      <div class="col-lg-5">
+        <div class="d-flex flex-column" style="height: 100%;">
+          <ul class="d-flex">
+            <li class="tag me-1">阿富汗</li>
+            <li class="tag me-1">女性權利</li>
+            <li class="tag">中東和北非</li>
+          </ul>
+          <h1 class="mt-3"><b>讓更多阿富汗女孩展開新的明天！</b></h1>
+          <p class="fw-lighter mt-2">唯有持續行動才能帶來改變，堅持為阿富汗女孩發聲、繼續動員國際社會付諸行動，讓她們有機會重拾受教育的權利，需要你的支持！</p>
+          <p class="mt-2 fs-5"><span class="fw-lighter fs-6">已有</span>23,335 人<span class="fw-lighter fs-6">參與</span></p>
+
+          <div class="d-flex mt-lg-auto mt-lg-0 mt-3 ">
+            <div class="btn text-primary border border-primary d-flex me-2 py-lg-2 py-3 px-lg-3 px-4 justify-content-center">
+              <i class="bi bi-bookmark-check-fill me-2"></i>
+              <p class="fw-bold">收藏活動</p>
+            </div>
+            <div class="btn d-flex text-dark py-lg-2 py-3 px-lg-3 px-4 bg-white justify-content-center" type="button"  id="liveAlertBtn">
+              <i class="bi bi-share-fill me-2"></i>
+              <p class="fw-bold">分享活動</p>
+            </div> 
+            
+          </div>
+          <div id="liveAlertPlaceholder" class="mt-3 share-alert" ></div>
+        </div>
+      </div>
+    </div>
+ 
+  </div>
+
+</div> 
+</section>
+
+
+<section class="mt-minus">
+  <div class="container">
+    <div class="border py-5 box-shadow bg-light">
+
+    <div class="row justify-content-center">
+
+      <div class="col-lg-3">
+        <div class="ms-lg-0 ms-4">
+        <div class="d-flex align-items-center"> 
+          <img src="../assets/images/logo.jpg" width="30" height="30" alt="">
+          <p class="ms-1 fs-5">easyfundraising</p>
+        </div>
+        <p class="text-secondary fw-lighter mt-1">線上募資平台</p>
+      </div> 
+    </div>
+
+      <div class="col-lg-2 border-start"> 
+        <div class="mt-lg-0 mt-5 ms-lg-2 ms-4">
+          <p class="fs-5">	&#11088;Top 20</p>
+          <p class="text-secondary fw-lighter mt-1">3,208 留言</p>  
+        </div>
+      </div>
+
+      <div class="col-lg-3 border-start"> 
+        <div class="mt-lg-0 mt-5 ms-lg-2 ms-4 ">
+          <p class="fs-5">已有23,335 人參與</p>
+        <p class="text-secondary fw-lighter mt-1">堅持為阿富汗女孩發聲、繼續動員國際社會付諸行動!</p>
+      </div>
+    </div>
+
+    <div class="col-lg-3 border-start"> 
+      <div class="mt-lg-0 mt-5 ms-lg-2 ms-4">
+        <div class="tag me-1 d-inline fs-6">Top 50 Ranked🔥</div>
+        <p class="text-secondary fw-lighter mt-3">幫助超過2.8萬阿富汗女孩！</p>
+    </div>
+  </div>
+
+</div>
+
+</div>
+</section>
+
+
+<section class="mt-lg-8 mb-5"> 
+  <div class="container">
+    <div class="row justify-content-center gx-lg-8">
+
+     <div class="col-lg-6"> 
+   
+     <div class="donate-title">
+       <img src="../assets/images/deco1.png" width="150" height="150" alt="">
+       <h2 class="fs-1 fw-bold mb-4">這種對阿富汗女性的窒息式鎮壓正與日俱增。</h2>
+
+       
+      <!-- <p class="fs-5 p-4"><span class="text-deco py-4">常見問題</span></p>； -->
+       <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <b>多久配給一次糧食給浪浪呢?</b>
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              真正把每一筆捐糧，都送到浪浪的肚子裡！政府立案公開透明，絕非飼料商助糧平台，讓您安心做愛心。幫助全台超過2.8萬隻毛小孩！成為最「食」在的後盾，營養補給每月準時配送，助浪浪遠離飢餓困境。勸募許可文號。
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <b>多久配給一次糧食給浪浪呢?</b>
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              真正把每一筆捐糧，都送到浪浪的肚子裡！政府立案公開透明，絕非飼料商助糧平台，讓您安心做愛心。幫助全台超過2.8萬隻毛小孩！成為最「食」在的後盾，營養補給每月準時配送，助浪浪遠離飢餓困境。勸募許可文號。
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              <b>是飼料商嗎?</b>
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              真正把每一筆捐糧，都送到浪浪的肚子裡！政府立案公開透明，絕非飼料商助糧平台，讓您安心做愛心。幫助全台超過2.8萬隻毛小孩！成為最「食」在的後盾，營養補給每月準時配送，助浪浪遠離飢餓困境。勸募許可文號。
+            </div>
+          </div>
+        </div>
+       </div>
+
+       <p class="fs-5 p-4"><span class="text-deco py-4">一個走在我旁邊的士兵打了我的胸部，他說：『我現在可以殺了你，沒人會多說什麼。』</span></p> 
+
+       <p>「在塔利班接管阿富汗的不到一年裡，他們的嚴厲政策正在剝奪數百萬婦女和女孩能有安全、自由和充實生活的權利。」國際特赦組織秘書長阿格妮斯・卡拉馬爾（Agnès Callamard）表示。 </p>
+
+       <p>「這些政策形成了一個壓迫體系，幾乎在生活的各個層面裡都歧視著婦女和女孩，歧視她們每一個日常生活的細節，是否可以上學、是否可以工作、怎麼工作、是否可以離開家以及怎麼離開家，都受到控制和嚴格的限制。」 </p>
+        
+       <p>「這種對阿富汗女性的窒息式鎮壓正與日俱增。國際社會必須迫切要求塔利班尊重和保護婦女和女童的權利。」 </p>
+        
+       <p>國際特赦組織呼籲塔利班實施重大的政策改革和措施，以維護婦女和女孩的權利。包含聯合國安全理事會和所有聯合國成員國在內的各國政府和國際組織，都必須緊急制定和實施強而有力的協調策略，迫使塔利班實現這些改革。 </p>
+        
+       <p>國際特赦組織的研究員於2022年3月造訪阿富汗。全面調查在2021年9月至2022年6月期間進行，調查內容包含訪問90名阿富汗婦女和11名女孩，年齡介於14至74歲之間，她們居住在阿富汗34個省中的20個省。 </p>
+       
+        <div class="mask text-center pt-7">
+          <div class="btn btn-primary text-light px-6 py-2 fs-5">展開瀏覽</div>
+        </div>
+     </div>
+   
+     </div>
+
+     <div class="col-lg-5">
+         <div class="bg-primary10 donate-form p-4 mt-4 mt-lg-0">
+
+         <div class="stepbar position-relative mt-4">
+ 
+          <div class="stepbar-number d-flex justify-content-between px-xl-4"> 
+            <div class="text-center"> 
+              <p class="bg-primary d-inline py-2 px-3 rounded-pill text-light">1</p> 
+              <p class="mt-3">選擇金額</p>
+            </div>
+            <div class="text-center"> 
+              <p class="bg-primary d-inline py-2 px-3 rounded-pill text-light">2</p> 
+              <p class="mt-3">填寫資料</p>
+            </div>
+            <div class="text-center"> 
+              <p class="bg-primary d-inline py-2 px-3 rounded-pill text-light">3</p> 
+              <p class="mt-3">線上付款</p>
+            </div> 
+          </div>
+ 
+            <div class="stepbar-line position-absolute progress bg-white" style="width: 75%; height: .8rem;">
+              <div class="progress-bar" role="progressbar" style="width: 30%;" ></div>
+            </div> 
+           
+
+         </div>
+
+         <div class="toggle-btn bg-light p-2 rounded-pill mx-auto mt-4" style="max-width: 13.5rem;"> 
+           <div class="d-flex justify-content-center"> 
+             <a class="bg-primary text-light py-2 px-3 rounded-pill" href="">定期定額</a>
+             <a class="py-2 px-3 rounded-pill" href="">單筆捐款</a>
+           </div>
+         </div>
+     
+         <ul class="mt-4">
+           <li class="price-option d-flex p-4 align-items-center mt-2">
+             <div class="" >
+               <p class="fs-4" style="width: 3.5rem;">$100</p>
+               <span class="fs-7">/month</span>
+             </div>
+     
+             <div class="ms-5"> 
+               <p class="fs-7">幫助我們為營養不良兒童提供住院治療及即時營養包</p>
+             </div>
+           </li>
+           <li class="selected-item d-flex p-4 align-items-center mt-2">
+             <div class="">
+               <p class="fs-4 text-primary" style="width: 3.5rem;">$500</p>
+               <span class="fs-7">/month</span>
+             </div>
+     
+             <div class="ms-5"> 
+               <p class="fs-7">幫助我們為受武裝衝突影響的傷病患提供緊急醫療照護 </p>
+             </div>
+           </li>
+           <li class="price-option d-flex p-4 align-items-center mt-2">
+             <div class="">
+               <p class="fs-4"  style="width: 3.5rem;">$1200</p>
+               <span class="fs-7">/month</span>
+             </div>
+     
+             <div class="ms-5"> 
+               <p class="fs-7">幫助我們派遣專業醫療團隊在前線提供醫療服務</p>
+             </div>
+           </li>
+           <li class="price-option d-flex p-4 align-items-center mt-2">
+             <div class="">
+               <p class="fs-4" style="width: 3.5rem;">$??</p>
+               <span class="fs-7">/month</span>
+             </div>
+     
+             <div class="ms-5"> 
+               <p class="fs-7">自訂金額</p>
+             </div>
+           </li>
+         </ul>
+     
+        <div class="mt-3 text-end">
+          <a href="form.html" class="btn bg-primary text-light px-4 fs-5">下一步</a>
+        </div>
+  
+       </div>
+     </div>
+
+  </div>
+
+ </div>
+</section>
+
+
+<%- include('./layout/toast'); -%>
+   
+    <%- include('./layout/footer'); -%>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
